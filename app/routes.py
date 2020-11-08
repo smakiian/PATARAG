@@ -8,19 +8,19 @@ import os
 @app.route('/index')
 def index():
     armtext = []
-    a_path = os.path.curdir + os.path.normpath(r'\app\patarag-text\a')
+    a_path = os.path.normpath(r'.\app\patarag-text\a')
     for i in sorted(os.listdir(a_path)):
         with codecs.open(os.path.join(a_path, i), 'r', encoding="utf-8") as arm:
             armtext.append(arm.readlines())
 
     trltext = []
-    t_path = os.path.curdir + os.path.normpath(r'\app\patarag-text\t')
+    t_path = os.path.normpath(r'.\app\patarag-text\t')
     for i in sorted(os.listdir(t_path)):
         with codecs.open(os.path.join(t_path, i), 'r', encoding="utf-8") as trl:
             trltext.append(trl.readlines())
 
     rustext = []
-    r_path = os.path.curdir + os.path.normpath(r'\app\patarag-text\r')
+    r_path = os.path.normpath(r'.\app\patarag-text\r')
     for i in sorted(os.listdir(r_path)):
         with codecs.open(os.path.join(r_path, i), 'r', encoding="utf-8") as rus:
             rustext.append(rus.readlines())
