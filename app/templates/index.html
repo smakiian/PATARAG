@@ -23,28 +23,34 @@
   </style>
  </head>
  <body>
-    <h1>Литургия</h1>
-  <table width="90%" cellpadding="5" cellspacing="0" style="align-self: center;">
-   <tr>
-    <td id="col1">
-        {% for i in armtext %}
-            {{i}}
-            <br>
+    <h1 align="center">Литургия</h1>
+    <div>
+        {% for i in range(27) %}
+        <table width="90%" cellpadding="5" cellspacing="0" align="center">
+            <tr>
+                <td id="col1">
+                    {% for j in armtext[i] %}
+                        {{j}}
+                        <br>
+                    {% endfor%}
+                </td>
+                <td id="col2">
+                    {% for j in trltext[i] %}
+                        {{j}}
+                        <br>
+                    {% endfor%}
+                </td>
+                <td id="col3">
+                    {% for j in rustext[i] %}
+                        {{j}}
+                        <br>
+                    {% endfor%}
+                
+                </td>
+            </tr>
+            </table>
+        <hr align="center" width="90%" size="5" color="rgb(50, 50, 50)" />
         {% endfor %}
-    </td>
-    <td id="col2">
-        {% for i in trltext %}
-            {{i}}
-            <br>
-        {% endfor %}
-    </td>
-    <td id="col3">
-        {% for i in rustext %}
-            {{i}}
-            <br>
-        {% endfor %}
-    </td>
-   </tr>
-  </table>
+    </div>
  </body>
 </html>
