@@ -8,7 +8,7 @@ import os
 @app.route('/index')
 def index():
     armtext = []
-    a_path = os.path.normpath(r'app/app/patarag-text/a')
+    a_path = os.path.normpath(r'/app/app/patarag-text/a')
     for i in sorted(os.listdir(a_path)):
         with codecs.open(os.path.join(a_path, i), 'r', encoding="utf-8") as arm:
             armtext.append(arm.readlines())
