@@ -26,27 +26,19 @@
     <h1 align="center">Литургия</h1>
     <div>
         {% for i in range(27) %}
-        <table width="90%" cellpadding="5" cellspacing="0" align="center">
+        <table width="90%" cellpadding="8%" cellspacing="0" align="center">
+            {% for j in range(armtext[i]|length()) %}
             <tr>
                 <td id="col1">
-                    {% for j in armtext[i] %}
-                        {{j}}
-                        <br>
-                    {% endfor%}
+                        {{armtext[i][j]}}
                 </td>
                 <td id="col2">
-                    {% for j in trltext[i] %}
-                        {{j}}
-                        <br>
-                    {% endfor%}
+                        {{trltext[i][j]}}
                 </td>
                 <td id="col3">
-                    {% for j in rustext[i] %}
-                        {{j}}
-                        <br>
-                    {% endfor%}
-                
+                        {{rustext[i][j]}}
                 </td>
+                {% endfor%}
             </tr>
             </table>
         <hr align="center" width="90%" size="5" color="rgb(50, 50, 50)" />
