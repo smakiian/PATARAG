@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Литургия</title>
+  <style type="text/css">
+   TD {
+    vertical-align: top; /* Выравнивание по верхнему краю ячейки */
+   }
+   #col1 {
+    width: 34%; /* Ширина первой колонки */
+    background: rgb(250, 250, 250); /* Цвет фона первой колонки */
+   }
+   #col2 {
+    width: 33%; /* Ширина второй колонки */
+    background: rgb(250, 250, 250); /* Цвет фона второй колонки */
+   }
+   #col3 {
+    width: 33%; /* Ширина третьей колонки */
+    background: rgb(250, 250, 250); /* Цвет фона третьей колонки */
+   }
+  </style>
+ </head>
+ <body>
+    <h1>Литургия</h1>
+  <table width="90%" cellpadding="5" cellspacing="0" style="align-self: center;">
+   <tr>
+    <td id="col1">
+        {% for i in armtext %}
+            {{i}}
+            <br>
+        {% endfor %}
+    </td>
+    <td id="col2">
+        {% for i in trltext %}
+            {{i}}
+            <br>
+        {% endfor %}
+    </td>
+    <td id="col3">
+        {% for i in rustext %}
+            {{i}}
+            <br>
+        {% endfor %}
+    </td>
+   </tr>
+  </table>
+ </body>
+</html>
