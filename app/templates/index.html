@@ -25,7 +25,9 @@
  <body>
     <h1 align="center">Литургия</h1>
     <div>
-        {% for i in range(27) %}
+        {% for i in range(armtext|length()) %}
+        <h2 align="center"> -- {{i +1}} -- </h2>
+        <hr align="center" width="90%" size="5" color="rgb(50, 50, 50)" />
         <table width="90%" cellpadding="8%" cellspacing="0" align="center">
             {% for j in range(armtext[i]|length()) %}
             <tr>
