@@ -4,9 +4,19 @@ import codecs
 import json
 import os
 
+
+
+
 @app.route('/')
 @app.route('/index')
 def index():
+
+    return render_template('index.html', title='Home')
+
+
+
+@app.route('/liturgia')
+def liturgia():
     armtext = []
     a_path = os.path.normpath(r'/app/app/patarag-text/a')
     for i in sorted(os.listdir(a_path)):
@@ -25,4 +35,4 @@ def index():
         with codecs.open(os.path.join(r_path, i), 'r', encoding="utf-8") as rus:
             rustext.append(rus.readlines())
 
-    return render_template('index.html', title='Home', armtext=armtext, trltext=trltext, rustext=rustext)
+    return render_template('liturgia.html', title='Liturgia', armtext=armtext, trltext=trltext, rustext=rustext)
