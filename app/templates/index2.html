@@ -4457,15 +4457,15 @@
                 <div id="content">
                     <div class="wrapper">
                         <a href="/" class="main-logo">
-                            <div class="primary-logo"><img src="/app/app/static/images/_DSC0235.JPG" alt="HLK Home"></div>
+                            <div class="primary-logo"><img src="{{ url_for('images', filename='_DSC0235.JPG') }}" alt="HLK Home"></div>
                         </a>
                         <div>
-                            <div class="intro full-screen" style="background-image:url(/app/app/static/images/_DSC0784_.JPG), url(/app/static/images/_DSC0784_.JPG);">
-                                <!-- <div class="blur-container" style="visibility:hidden;">
+                            <div class="intro full-screen" style="background-image:url({{ url_for('images', filename='_DSC0784_.JPG') }}, {{ url_for('images', filename='_DSC0235.JPG') }});">
+                                <div class="blur-container" style="visibility:hidden;">
                                     <div class="curtain"></div>
-                                    <img src="/image-api/5b565b00b5385e20d6a82a24" alt class="blur-to">
-                                    <img src="/image-api/tiny/5b565b00b5385e20d6a82a24" alt class="blur-from">
-                                </div> -->
+                                    <img src="{{ url_for('images', filename='_DSC0235.JPG') }}" alt class="blur-to">
+                                    <!-- <img src="/image-api/tiny/5b565b00b5385e20d6a82a24" alt class="blur-from"> -->
+                                </div>
                                 <div class="vert-center">
                                     <div class="text-wrap">
                                         <h1>Украинская епархия <br> Армянской Апостольской церкви</h1><br>
@@ -4497,7 +4497,7 @@
                                                 </p>
                                             </div><span class="link">Открыть</span></a>
                                     </div>
-                                    <div class="blur-container"><img src="/app/app/static/images/_DSC0234.JPG" alt>
+                                    <div class="blur-container"><img src="{{ url_for('images', filename='_DSC0234.JPG') }}" alt>
                                         <div class="curtain"></div>
                                     </div>
                                 </div>
@@ -4510,7 +4510,7 @@
                                                 <p>Только армянский текст<br></p>
                                             </div><span class="link">Открыть</span></a>
                                     </div>
-                                    <div class="blur-container"><img src="/app/app/static/images/_DSC0233.JPG" alt>
+                                    <div class="blur-container"><img src="{{ url_for('images', filename='_DSC0233.JPG') }}" alt>
                                         <div class="curtain"></div>
                                     </div>
                                 </div>
@@ -4523,7 +4523,7 @@
                                                 <p>Транслитерация армянского текста киррилицей</p>
                                             </div><span class="link">Открыть</span></a>
                                     </div>
-                                    <div class="blur-container"><img src="/app/app/static/images/_DSC0334.JPG" alt>
+                                    <div class="blur-container"><img src="{{ url_for('images', filename='_DSC0334.JPG') }}" alt>
                                         <div class="curtain"></div>
                                     </div>
                                 </div>
@@ -4536,7 +4536,7 @@
                                                 <p>Перевод на русский</p>
                                             </div><span class="link">Открыть</span></a>
                                     </div>
-                                    <div class="blur-container"><img src="/app/app/static/images/_DSC0190.JPG" alt>
+                                    <div class="blur-container"><img src="{{ url_for('images', filename='_DSC0190.JPG') }}" alt>
                                         <div class="curtain"></div>
                                     </div>
                                 </div>
