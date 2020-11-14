@@ -4,35 +4,23 @@ import codecs
 import json
 import os
 
-
-
-
 @app.route('/')
 @app.route('/index')
 def index():
 
     return render_template('index2.html', title='Home')
 
-
-
 @app.route('/liturgia')
 def liturgia():
-    armtext = []
-    a_path = os.path.normpath(r'/app/app/patarag-text/a')
-    for i in sorted(os.listdir(a_path)):
-        with codecs.open(os.path.join(a_path, i), 'r', encoding="utf-8") as arm:
-            armtext.append(arm.readlines())
+    text_dict = {'a': [], 't': [], 'r': []}
+    # "a" for armenian text
+    # "t" for translitaration of armenian
+    # "r" for russian text
 
-    trltext = []
-    t_path = os.path.normpath(r'/app/app/patarag-text/t')
-    for i in sorted(os.listdir(t_path)):
-        with codecs.open(os.path.join(t_path, i), 'r', encoding="utf-8") as trl:
-            trltext.append(trl.readlines())
+    for j in text_dict:
+        path = os.path.normpath(os.getcwd() + f"/app/patarag-text/{j}")
+        for i in sorted(os.listdir(path)):
+            with codecs.open(os.path.join(path, i), "r", encoding="utf-8") as f:
+                text_dict[j].append(f.readlines())
 
-    rustext = []
-    r_path = os.path.normpath(r'/app/app/patarag-text/r')
-    for i in sorted(os.listdir(r_path)):
-        with codecs.open(os.path.join(r_path, i), 'r', encoding="utf-8") as rus:
-            rustext.append(rus.readlines())
-
-    return render_template('liturgia2.html', title='Liturgia', armtext=armtext, trltext=trltext, rustext=rustext)
+    return render_template('liturgia2.html', title='Liturgia', armtext=text_dict['a'], trltext=text_dict['t'], rustext=text_dict['r'])
