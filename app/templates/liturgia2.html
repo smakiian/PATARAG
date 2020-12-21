@@ -310,12 +310,13 @@
         
         .h1,
         h1 {
-            font-size: 1.8em;
+            font-size: 1em;
             line-height: 1.2;
             font-weight: 500;
             margin: 0 0 .25em;
-            color: #3a3b3a;
-            letter-spacing: -1px
+            color: #b2b2b2;
+            letter-spacing: -1px;
+            text-align: center;
         }
         
         @media only screen and (min-width:768px) and (max-width:1023px) {
@@ -348,12 +349,13 @@
         
         .h2,
         h2 {
-            font-size: 2em;
+            font-size: 1em;
             line-height: 1.15em;
             font-weight: 500;
             margin: 0 0 .5em;
-            color: #3a3b3a;
-            letter-spacing: -2px
+            color: #b2b2b2;
+            letter-spacing: -2px;
+            text-align: center;
         }
         
         @media only screen and (min-width:768px) and (max-width:1023px) {
@@ -4406,7 +4408,7 @@
         }
     </style>
     <style data-vue-ssr-id="f53d8eec:0">
-    .grey {
+        .grey {
             fill: #b2b2b2
         }
         
@@ -4439,32 +4441,51 @@
             -webkit-transform: translateY(-1px);
             transform: translateY(-1px)
         }
-    }
-    TD {
-        vertical-align: top;
-        /* Выравнивание по верхнему краю ячейки */
-    }
-    #col1 {
-        width: 34%;
-        /* Ширина первой колонки */
         
-        background: rgb(250, 250, 250);
-        /* Цвет фона первой колонки */
-    }
-    #col2 {
-        width: 33%;
-        /* Ширина второй колонки */
+        .table {
+            margin: 3%;
+            text-align: justify;
+        }
         
-        background: rgb(250, 250, 250);
-        /* Цвет фона второй колонки */
-    }
-    #col3 {
-        width: 33%;
-        /* Ширина третьей колонки */
+        TD {
+            vertical-align: top;
+            border-left: 25px solid #3a3b3a;
+            border-right: 25px solid #3a3b3a;
+            /* Выравнивание по верхнему краю ячейки */
+        }
         
-        background: rgb(250, 250, 250);
-        /* Цвет фона третьей колонки */
-    }
+        #col1 {
+            width: 30%;
+            /* Ширина первой колонки */
+            /* background: rgb(250, 250, 250); */
+            /* Цвет фона первой колонки */
+            background-color: #3a3b3a;
+            color: #b2b2b2;
+            font-weight: 550;
+            font-size: .9em;
+        }
+        
+        #col2 {
+            width: 30%;
+            /* Ширина второй колонки */
+            /* background: rgb(250, 250, 250); */
+            /* Цвет фона второй колонки */
+            background-color: #3a3b3a;
+            color: #b2b2b2;
+            font-weight: 550;
+            font-size: .9em;
+        }
+        
+        #col3 {
+            width: 30%;
+            /* Ширина третьей колонки */
+            /* background: rgb(250, 250, 250); */
+            /* Цвет фона третьей колонки */
+            background-color: #3a3b3a;
+            color: #b2b2b2;
+            font-weight: 550;
+            font-size: .9em;
+        }
     </style>
 </head>
 
@@ -4478,17 +4499,17 @@
                     <div class="border right"></div>
                     <div class="border bottom"></div>
                     <div class="border left"></div>
-                    <div class="main-menu-button"><span class="bar bar-1"></span><span class="bar bar-2"></span><span class="bar bar-3"></span></div>
+                    <div class="main-menu-button" href="index" class="hit"><span class="bar bar-1"></span><span class="bar bar-2"></span><span class="bar bar-3"></span></div>
                 </header>
                 <div id="content">
                     <div class="wrapper">
                         <div>
-                            <div class="intro full-screen" style="background-image:url(_DSC0784_.JPG), url(_DSC0784_.JPG);">
-                                <div class="vert-center">
-                                    <div class="text-wrap">
-                                        <h1>Литургия</h1><br> {% for i in range(armtext|length()) %}
+                            <div>
+                                <div>
+                                    <div>
+                                        <h1 class="">Литургия</h1><br> {% for i in range(armtext|length()) %}
                                         <h2> -- {{i +1}} -- </h2>
-                                        <hr color="rgb(50, 50, 50)" />
+                                        <hr color="#54b0cb" />
                                         <table class="table">
                                             {% for j in range(armtext[i]|length()) %}
                                             <tr>
@@ -4504,7 +4525,7 @@
                                                 {% endfor%}
                                             </tr>
                                         </table>
-                                        <hr color="rgb(50, 50, 50)" /> {% endfor %}
+                                        <hr color="#54b0cb" /> {% endfor %}
                                     </div>
                                 </div>
                             </div>
@@ -4526,7 +4547,7 @@
                                             </p>
                                         </div>
                                         <div class="align align--bottom">
-                                            <p><a href="mailto:" class="link-secondary">ACC@gmail.com</a><br><a href="tel:+380507740161" class="link-secondary">+38 050 7740161</a></p>
+                                            <p><a href="mailto:" class="link-secondary">armchurchkiev@gmail.com</a><br><a href="tel:+380958939964" class="link-secondary">+38 095 893 9964</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -4535,8 +4556,8 @@
                                 <div class="align align--top">
                                     <h4>Connect With Us</h4>
                                     <ul class="social-media-list social-media-list--reset">
-                                        <li class="social-media-list__item"><a href="https://www.facebook.com/armchurchkiev" title="HLK Facebook" target="_blank" rel="noopener noreferrer" class="social-media-link"><span class="social-media-link__visually-hidden">Facebook</span><div><svg aria-labelledby="HLK Facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 25.84" width="26" height="25.84"><title id="HLK Facebook" lang="en">HLK Facebook</title><path d="M13,0a13,13,0,0,0-2,25.84V16.76H7.67V13H11V10.14c0-3.26,1.94-5.06,4.91-5.06a20.34,20.34,0,0,1,2.91.25v3.2H17.15a1.88,1.88,0,0,0-2.12,2V13h3.61l-.58,3.76H15v9.08A13,13,0,0,0,13,0Z" class="grey"></path></svg></div></a></li>
-                                        <li class="social-media-list__item"><a href="https://www.instagram.com/armchurchkiev/" title="HLK Instagram" target="_blank" rel="noopener noreferrer" class="social-media-link"><span class="social-media-link__visually-hidden">Instagram</span><div><svg aria-labelledby="HLK Instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="26" height="26"><title id="HLK Instagram" lang="en">HLK Instagram</title><path d="M13,2.34c3.47,0,3.88,0,5.25.08a7.22,7.22,0,0,1,2.42.45,3.89,3.89,0,0,1,1.49,1,3.89,3.89,0,0,1,1,1.49,7.22,7.22,0,0,1,.45,2.42c.06,1.37.08,1.78.08,5.25s0,3.88-.08,5.25a7.22,7.22,0,0,1-.45,2.42,4.3,4.3,0,0,1-2.46,2.46,7.22,7.22,0,0,1-2.42.45c-1.37.06-1.78.08-5.25.08s-3.88,0-5.25-.08a7.22,7.22,0,0,1-2.42-.45,3.89,3.89,0,0,1-1.49-1,3.89,3.89,0,0,1-1-1.49,7.22,7.22,0,0,1-.45-2.42c-.06-1.37-.08-1.78-.08-5.25s0-3.88.08-5.25a7.22,7.22,0,0,1,.45-2.42,3.89,3.89,0,0,1,1-1.49,3.89,3.89,0,0,1,1.49-1,7.22,7.22,0,0,1,2.42-.45c1.37-.06,1.78-.08,5.25-.08M13,0C9.47,0,9,0,7.64.08a9.57,9.57,0,0,0-3.16.6,6.39,6.39,0,0,0-2.3,1.5,6.39,6.39,0,0,0-1.5,2.3,9.57,9.57,0,0,0-.6,3.16C0,9,0,9.47,0,13s0,4,.08,5.36a9.57,9.57,0,0,0,.6,3.16,6.39,6.39,0,0,0,1.5,2.3,6.39,6.39,0,0,0,2.3,1.5,9.57,9.57,0,0,0,3.16.6C9,26,9.47,26,13,26s4,0,5.36-.08a9.57,9.57,0,0,0,3.16-.6,6.66,6.66,0,0,0,3.8-3.8,9.57,9.57,0,0,0,.6-3.16C26,17,26,16.53,26,13s0-4-.08-5.36a9.57,9.57,0,0,0-.6-3.16,6.39,6.39,0,0,0-1.5-2.3,6.39,6.39,0,0,0-2.3-1.5,9.57,9.57,0,0,0-3.16-.6C17,0,16.53,0,13,0Z" class="grey"></path><path d="M13,6.32A6.68,6.68,0,1,0,19.68,13,6.68,6.68,0,0,0,13,6.32Zm0,11A4.33,4.33,0,1,1,17.33,13,4.33,4.33,0,0,1,13,17.33Z" class="grey"></path><circle cx="19.94" cy="6.06" r="1.56" class="grey"></circle></svg></div></a></li>
+                                        <li class="social-media-list__item"><a href="https://www.facebook.com/armchurchkiev" title="Facebook" target="_blank" rel="noopener noreferrer" class="social-media-link"><span class="social-media-link__visually-hidden">Facebook</span><div><svg aria-labelledby="Facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 25.84" width="26" height="25.84"><title id="Facebook" lang="en">Facebook</title><path d="M13,0a13,13,0,0,0-2,25.84V16.76H7.67V13H11V10.14c0-3.26,1.94-5.06,4.91-5.06a20.34,20.34,0,0,1,2.91.25v3.2H17.15a1.88,1.88,0,0,0-2.12,2V13h3.61l-.58,3.76H15v9.08A13,13,0,0,0,13,0Z" class="grey"></path></svg></div></a></li>
+                                        <li class="social-media-list__item"><a href="https://www.instagram.com/armchurchkiev/" title="Instagram" target="_blank" rel="noopener noreferrer" class="social-media-link"><span class="social-media-link__visually-hidden">Instagram</span><div><svg aria-labelledby="Instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="26" height="26"><title id="Instagram" lang="en">Instagram</title><path d="M13,2.34c3.47,0,3.88,0,5.25.08a7.22,7.22,0,0,1,2.42.45,3.89,3.89,0,0,1,1.49,1,3.89,3.89,0,0,1,1,1.49,7.22,7.22,0,0,1,.45,2.42c.06,1.37.08,1.78.08,5.25s0,3.88-.08,5.25a7.22,7.22,0,0,1-.45,2.42,4.3,4.3,0,0,1-2.46,2.46,7.22,7.22,0,0,1-2.42.45c-1.37.06-1.78.08-5.25.08s-3.88,0-5.25-.08a7.22,7.22,0,0,1-2.42-.45,3.89,3.89,0,0,1-1.49-1,3.89,3.89,0,0,1-1-1.49,7.22,7.22,0,0,1-.45-2.42c-.06-1.37-.08-1.78-.08-5.25s0-3.88.08-5.25a7.22,7.22,0,0,1,.45-2.42,3.89,3.89,0,0,1,1-1.49,3.89,3.89,0,0,1,1.49-1,7.22,7.22,0,0,1,2.42-.45c1.37-.06,1.78-.08,5.25-.08M13,0C9.47,0,9,0,7.64.08a9.57,9.57,0,0,0-3.16.6,6.39,6.39,0,0,0-2.3,1.5,6.39,6.39,0,0,0-1.5,2.3,9.57,9.57,0,0,0-.6,3.16C0,9,0,9.47,0,13s0,4,.08,5.36a9.57,9.57,0,0,0,.6,3.16,6.39,6.39,0,0,0,1.5,2.3,6.39,6.39,0,0,0,2.3,1.5,9.57,9.57,0,0,0,3.16.6C9,26,9.47,26,13,26s4,0,5.36-.08a9.57,9.57,0,0,0,3.16-.6,6.66,6.66,0,0,0,3.8-3.8,9.57,9.57,0,0,0,.6-3.16C26,17,26,16.53,26,13s0-4-.08-5.36a9.57,9.57,0,0,0-.6-3.16,6.39,6.39,0,0,0-1.5-2.3,6.39,6.39,0,0,0-2.3-1.5,9.57,9.57,0,0,0-3.16-.6C17,0,16.53,0,13,0Z" class="grey"></path><path d="M13,6.32A6.68,6.68,0,1,0,19.68,13,6.68,6.68,0,0,0,13,6.32Zm0,11A4.33,4.33,0,1,1,17.33,13,4.33,4.33,0,0,1,13,17.33Z" class="grey"></path><circle cx="19.94" cy="6.06" r="1.56" class="grey"></circle></svg></div></a></li>
                                     </ul>
                                 </div>
                             </div>
