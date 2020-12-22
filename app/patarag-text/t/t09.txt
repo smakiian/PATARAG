@@ -1,23 +1,23 @@
-Можно присесть
-
-ЧТЕНИЕ ПИСАНИЯ 
-
-Диакон читает библейские книги пророков и апостолов.
-Встать
-
-Диакон – Алэлуиа, Ортhи! 
-
-Священник осеняет паству крестным знамением, говоря:
-
-Священник – † Хахахутhюн аменэцун. 
-Хор – Ев энд hогвуйд кhум. 
-Диакон – Еркюхацhутhямб лварукh! 
-
-Диакон повернушись к пихожанам:
-Диакон – † Србо Авэтарани hисуси Кhристоси вор эст (орва аветаране)
-Хор – Пhарркh, Кhэз, Тэр Аствацh мэр! 
-Диакон – Прросхумэ! 
-Хор – Асэ Аствацh. 
-
-Диакон читает святое Евангелие, и по окончании хор поет:
-Хор – Пhарркh, Кhэз, Тэр Аствацh мэр!
+<p class="annotation lang-t chapter-09">Можно присесть</p>
+<p class="empty_line lang-t chapter-09"></p>
+<p class="p_title lang-t chapter-09">ЧТЕНИЕ ПИСАНИЯ</p>
+<p class="empty_line lang-t chapter-09"></p>
+<p class="annotation lang-t chapter-09">Диакон читает библейские книги пророков и апостолов.</p>
+<p class="annotation lang-t chapter-09">Встать</p>
+<p class="empty_line lang-t chapter-09"></p>
+<p class="lines deacon lang-t chapter-09"><b>Диакон – </b>Алэлуиа, Ортhи! </p>
+<p class="empty_line lang-t chapter-09"></p>
+<p class="annotation lang-t chapter-09">Священник осеняет паству крестным знамением, говоря:</p>
+<p class="empty_line lang-t chapter-09"></p>
+<p class="lines priest lang-t chapter-09"><b>Священник – </b>† Хахахутhюн аменэцун. </p>
+<p class="lines chorus lang-t chapter-09"><b>Хор – </b>Ев энд hогвуйд кhум. </p>
+<p class="lines deacon lang-t chapter-09"><b>Диакон – </b>Еркюхацhутhямб лварукh! </p>
+<p class="empty_line lang-t chapter-09"></p>
+<p class="annotation lang-t chapter-09">Диакон повернушись к пихожанам:</p>
+<p class="lines deacon lang-t chapter-09"><b>Диакон – </b>† Србо Авэтарани hисуси Кhристоси вор эст (орва аветаране)</p>
+<p class="lines chorus lang-t chapter-09"><b>Хор – </b>Пhарркh, Кhэз, Тэр Аствацh мэр! </p>
+<p class="lines deacon lang-t chapter-09"><b>Диакон – </b>Прросхумэ! </p>
+<p class="lines chorus lang-t chapter-09"><b>Хор – </b>Асэ Аствацh. </p>
+<p class="empty_line lang-t chapter-09"></p>
+<p class="annotation lang-t chapter-09">Диакон читает святое Евангелие, и по окончании хор поет:</p>
+<p class="lines chorus lang-t chapter-09"><b>Хор – </b>Пhарркh, Кhэз, Тэр Аствацh мэр!</p>

@@ -1,23 +1,23 @@
-Можно присесть
-
-ЧТЕНИЕ ПИСАНИЯ 
-
-Диакон читает библейские книги пророков и апостолов.
-Встать
-
-Диакон – Аллилуйя. Прости. 
-
-Священник осеняет паству крестным знамением, говоря:
-
-Священник – † Мир всем. 
-Хор – И с духом твоим. 
-Диакон – Слушаем с трепетом.
-
-Диакон повернушись к пихожанам:
-Диакон – † Иисуса Христа Святое Евангелие от ... 
-Хор – Слава тебе, Господи Боже наш!
-Диакон – Внимание!
-Хор – Глаголит Бог.
-
-Диакон читает святое Евангелие, и по окончании хор поет:
-Хор – Слава Тебе, Господи Боже наш
+<p class="annotation lang-r chapter-09">Можно присесть</p>
+<p class="empty_line lang-r chapter-09"></p>
+<p class="p_title lang-r chapter-09">ЧТЕНИЕ ПИСАНИЯ</p>
+<p class="empty_line lang-r chapter-09"></p>
+<p class="annotation lang-r chapter-09">Диакон читает библейские книги пророков и апостолов.</p>
+<p class="annotation lang-r chapter-09">Встать</p>
+<p class="empty_line lang-r chapter-09"></p>
+<p class="lines deacon lang-r chapter-09"><b>Диакон – </b>Аллилуйя. Прости. </p>
+<p class="empty_line lang-r chapter-09"></p>
+<p class="annotation lang-r chapter-09">Священник осеняет паству крестным знамением, говоря:</p>
+<p class="empty_line lang-r chapter-09"></p>
+<p class="lines priest lang-r chapter-09"><b>Священник – </b>† Мир всем. </p>
+<p class="lines chorus lang-r chapter-09"><b>Хор – </b>И с духом твоим. </p>
+<p class="lines deacon lang-r chapter-09"><b>Диакон – </b>Слушаем с трепетом.</p>
+<p class="empty_line lang-r chapter-09"></p>
+<p class="annotation lang-r chapter-09">Диакон повернушись к пихожанам:</p>
+<p class="lines deacon lang-r chapter-09"><b>Диакон – </b>† Иисуса Христа Святое Евангелие от ... </p>
+<p class="lines chorus lang-r chapter-09"><b>Хор – </b>Слава тебе, Господи Боже наш!</p>
+<p class="lines deacon lang-r chapter-09"><b>Диакон – </b>Внимание!</p>
+<p class="lines chorus lang-r chapter-09"><b>Хор – </b>Глаголит Бог.</p>
+<p class="empty_line lang-r chapter-09"></p>
+<p class="annotation lang-r chapter-09">Диакон читает святое Евангелие, и по окончании хор поет:</p>
+<p class="lines chorus lang-r chapter-09"><b>Хор – </b>Слава Тебе, Господи Боже наш!</p>

@@ -4444,7 +4444,6 @@
         
         .table {
             margin: 3%;
-            text-align: justify;
         }
         
         TD {
@@ -4461,8 +4460,9 @@
             /* Цвет фона первой колонки */
             background-color: #3a3b3a;
             color: #b2b2b2;
-            font-weight: 550;
-            font-size: .9em;
+            font-weight: 500;
+            font-size: 1em;
+            text-align: justify
         }
         
         #col2 {
@@ -4472,8 +4472,9 @@
             /* Цвет фона второй колонки */
             background-color: #3a3b3a;
             color: #b2b2b2;
-            font-weight: 550;
-            font-size: .9em;
+            font-weight: 500;
+            font-size: 1em;
+            text-align: justify
         }
         
         #col3 {
@@ -4483,8 +4484,25 @@
             /* Цвет фона третьей колонки */
             background-color: #3a3b3a;
             color: #b2b2b2;
-            font-weight: 550;
-            font-size: .9em;
+            font-weight: 500;
+            font-size: 1em;
+            text-align: justify
+        }
+        
+        .annotation {
+            text-align: center;
+            font-size: 1em;
+            font-style: italic;
+        }
+        
+        .paster_noster {
+            text-align: center;
+        }
+        
+        .p_title {
+            font-weight: 650;
+            font-size: 1.2em;
+            text-align: center;
         }
     </style>
 </head>
@@ -4499,7 +4517,7 @@
                     <div class="border right"></div>
                     <div class="border bottom"></div>
                     <div class="border left"></div>
-                    <div class="main-menu-button" href="index" class="hit"><span class="bar bar-1"></span><span class="bar bar-2"></span><span class="bar bar-3"></span></div>
+                    <div class="main-menu-button"><span class="bar bar-1"></span><span class="bar bar-2"></span><span class="bar bar-3"></span></div>
                 </header>
                 <div id="content">
                     <div class="wrapper">
@@ -4507,10 +4525,11 @@
                             <div>
                                 <div>
                                     <div>
-                                        <h1 class="">Литургия</h1><br> {% for i in range(armtext|length()) %}
+                                        <h1 class="">Литургия</h1><br> {% autoescape false %} {% for i in range(armtext|length()) %}
                                         <h2> -- {{i +1}} -- </h2>
                                         <hr color="#54b0cb" />
                                         <table class="table">
+
                                             {% for j in range(armtext[i]|length()) %}
                                             <tr>
                                                 <td id="col1">
@@ -4523,9 +4542,10 @@
                                                     {{rustext[i][j]}}
                                                 </td>
                                                 {% endfor%}
+
                                             </tr>
                                         </table>
-                                        <hr color="#54b0cb" /> {% endfor %}
+                                        <hr color="#54b0cb" /> {% endfor %} {% endautoescape %}
                                     </div>
                                 </div>
                             </div>
