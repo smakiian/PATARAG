@@ -33,16 +33,26 @@
             background: rgb(250, 250, 250);
             /* Цвет фона третьей колонки */
         }
+        
+        .annotation {
+            text-align: center;
+            font-style: italic;
+        }
+        
+        .p_title {
+            text-align: center;
+            font-weight: 600;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <h1 style="text-align: center;">Литургия</h1>
-        {% for i in range(armtext|length()) %}
+        {% autoescape false %} {% for i in range(armtext|length()) %}
         <h2 style="text-align: center;"> -- {{i +1}} -- </h2>
         <hr color="rgb(50, 50, 50)" />
-        <table type="text/css" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" cellpadding="8%" cellspacing="0">
+        <table type="text/css" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" cellpadding="5" cellspacing="25">
             {% for j in range(armtext[i]|length()) %}
             <tr>
                 <td id="col1">
@@ -57,7 +67,8 @@
                 {% endfor%}
             </tr>
         </table>
-        {% endfor %}
+        {% endfor %} {% endautoescape %}
+        <hr color="rgb(50, 50, 50)" />
 
         <!-- Подключаем jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

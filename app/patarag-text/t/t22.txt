@@ -1,15 +1,15 @@
-Встать или встать на колени
-
-ПЕСНЬ ПОКАЯНИЯ
-
-Диаконы попеременно с хором поют «Господи, помилуй!»
-
-Хор – Тэр, вохормя, Тэр, вохормя, Тэр, вохормя, Тэр, вохормя! 
-Диакон – Тэр, вохормя, Тэр, вохормя, Тэр, вохормя, Тэр, вохормя! 
-Хор – Амэнасурб Еррордутhюн, Тур ашхарhис хахаhутhюн. 
-Диакон – Ев hивандац бжшкутhюн, Ннджэцэлоц Аркhайутhюн.
-Хор – Тэр, вохормя, Тэр, вохормя, hисус Пhркич, мэз вохормя!
-Диакон – Миджнордутhямб сурб ев анмаh ев кэнарар Патарагис. 
-Хор – Энкал, Тэр, ев вохормя!
-
-
+<p class="annotation lang-t chapter-22">Встать или встать на колени</p>
+<p class="empty_line lang-t chapter-22"></p>
+<p class="p_title lang-t chapter-22">ПЕСНЬ ПОКАЯНИЯ</p>
+<p class="empty_line lang-t chapter-22"></p>
+<p class="annotation lang-t chapter-22">Диаконы попеременно с хором поют «Господи, помилуй!»</p>
+<p class="empty_line lang-t chapter-22"></p>
+<p class="lines chorus lang-t chapter-22"><b>Хор – </b>Тэр, вохормя, Тэр, вохормя, Тэр, вохормя, Тэр, вохормя! </p>
+<p class="lines deacon lang-t chapter-22"><b>Диакон – </b>Тэр, вохормя, Тэр, вохормя, Тэр, вохормя, Тэр, вохормя! </p>
+<p class="lines chorus lang-t chapter-22"><b>Хор – </b>Амэнасурб Еррордутhюн, Тур ашхарhис хахаhутhюн. </p>
+<p class="lines deacon lang-t chapter-22"><b>Диакон – </b>Ев hивандац бжшкутhюн, Ннджэцэлоц Аркhайутhюн.</p>
+<p class="lines chorus lang-t chapter-22"><b>Хор – </b>Тэр, вохормя, Тэр, вохормя, hисус Пhркич, мэз вохормя!</p>
+<p class="lines deacon lang-t chapter-22"><b>Диакон – </b>Миджнордутhямб сурб ев анмаh ев кэнарар Патарагис. </p>
+<p class="lines chorus lang-t chapter-22"><b>Хор – </b>Энкал, Тэр, ев вохормя!</p>
+<p class="empty_line lang-t chapter-22"></p>
+<p class="empty_line lang-t chapter-22"></p>
