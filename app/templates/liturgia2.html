@@ -4521,36 +4521,41 @@
                 </header>
                 <div id="content">
                     <div class="wrapper">
-                        <div>
-                            <div>
-                                <div>
-                                    <div>
-                                        <h1 class="">Литургия</h1><br> {% autoescape false %} {% for i in range(armtext|length()) %}
-                                        <h2> -- {{i +1}} -- </h2>
-                                        <hr color="#54b0cb" />
-                                        <table class="table">
-
-                                            {% for j in range(armtext[i]|length()) %}
-                                            <tr>
-                                                <td id="col1">
-                                                    {{armtext[i][j]}}
-                                                </td>
-                                                <td id="col2">
-                                                    {{trltext[i][j]}}
-                                                </td>
-                                                <td id="col3">
-                                                    {{rustext[i][j]}}
-                                                </td>
-                                                {% endfor%}
-
-                                            </tr>
-                                        </table>
-                                        <hr color="#54b0cb" /> {% endfor %} {% endautoescape %}
-                                    </div>
+                        <div data-v-56550fa0>
+                            <div class="intro" style="background-image:url(../static/_DSC0301.jpg), url(../static/_DSC0301.jpg);" data-v-56550fa0>
+                                <div class="blur-container" style="visibility:hidden;">
+                                    <div class="curtain"></div><img src="{{ url_for('static', filename='_DSC0301.JPG') }}" alt class="blur-to remain"><img src="{{ url_for('static', filename='_DSC0301.JPG') }}" alt class="blur-from"></div>
+                                <div class="vert-center">
+                                    <h1><span class="pink">Литургия</span></h1>
                                 </div>
                             </div>
                         </div>
+                        <div>
+                            <br> {% autoescape false %} {% for i in range(armtext|length()) %}
+                            <h2> -- {{i +1}} -- </h2>
+                            <!-- <hr color="#54b0cb" /> -->
+                            <table class="table">
+
+                                {% for j in range(armtext[i]|length()) %}
+                                <tr>
+                                    <td id="col1">
+                                        {{armtext[i][j]}}
+                                    </td>
+                                    <td id="col2">
+                                        {{trltext[i][j]}}
+                                    </td>
+                                    <td id="col3">
+                                        {{rustext[i][j]}}
+                                    </td>
+                                    {% endfor%}
+
+                                </tr>
+                            </table>
+                            <!-- <hr color="#54b0cb" /> -->
+                            {% endfor %} {% endautoescape %}
+                        </div>
                     </div>
+
                 </div>
                 <footer>
                     <div class="contain">
