@@ -10,6 +10,8 @@
     <!-- тег viewport, который позволяет 
           выставить базовые настройки для корректного отображения сайта на мобильных устройствах.-->
 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
     <style data-vue-ssr-id="16dcc643:0">
         article,
         aside,
@@ -43,12 +45,12 @@
         html {
             font-family: sans-serif;
             -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%
+            -ms-text-size-adjust: 100%;
         }
         
         body {
             margin: 0;
-            background-color: #3a3b3a;
+            background-color: #e9e9eb;
         }
         
         a:focus {
@@ -298,7 +300,7 @@
             font-family: Gotham SSm A, Gotham SSm B, sans-serif;
             font-size: 1.4em;
             line-height: 1.75em;
-            color: #3a3b3a;
+            color: #e9e9eb;
             font-weight: 400
         }
         
@@ -4444,12 +4446,13 @@
         
         .table {
             margin: 3%;
+            color: #3a3b3a;
         }
         
         TD {
             vertical-align: top;
-            border-left: 25px solid #3a3b3a;
-            border-right: 25px solid #3a3b3a;
+            border-left: 25px solid #e9e9eb;
+            border-right: 25px solid #e9e9eb;
             /* Выравнивание по верхнему краю ячейки */
         }
         
@@ -4458,10 +4461,10 @@
             /* Ширина первой колонки */
             /* background: rgb(250, 250, 250); */
             /* Цвет фона первой колонки */
-            background-color: #3a3b3a;
-            color: #b2b2b2;
+            /* background-color: #3a3b3a;
+            color: #b2b2b2; */
             font-weight: 500;
-            font-size: 1em;
+            font-size: 1.3em;
             text-align: justify
         }
         
@@ -4470,10 +4473,10 @@
             /* Ширина второй колонки */
             /* background: rgb(250, 250, 250); */
             /* Цвет фона второй колонки */
-            background-color: #3a3b3a;
-            color: #b2b2b2;
+            /* background-color: #3a3b3a;
+            color: #b2b2b2; */
             font-weight: 500;
-            font-size: 1em;
+            font-size: 1.3em;
             text-align: justify
         }
         
@@ -4482,10 +4485,10 @@
             /* Ширина третьей колонки */
             /* background: rgb(250, 250, 250); */
             /* Цвет фона третьей колонки */
-            background-color: #3a3b3a;
-            color: #b2b2b2;
+            /* background-color: #3a3b3a;
+            color: #b2b2b2; */
             font-weight: 500;
-            font-size: 1em;
+            font-size: 1.3em;
             text-align: justify
         }
         
@@ -4507,8 +4510,8 @@
             text-align: center;
         }
         
-        #next {
-            color: rgb(100, 100, 100);
+        .next {
+            color: #b2b2b2;
             display: block;
             right: 0.6em;
             top: 50%;
@@ -4519,8 +4522,8 @@
             width: auto;
         }
         
-        #prev {
-            color: rgb(100, 100, 100);
+        .prev {
+            color: #b2b2b2;
             display: block;
             top: 50%;
             font: normal 2em Arial, sans-serif;
@@ -4530,39 +4533,39 @@
             width: auto;
         }
         
-        #next,
-        #prev {
-            padding: 1em 0.5em
+        .next,
+        .prev {
+            padding: 1em 1em
         }
         
-        #next {
+        .next {
             text-align: right
         }
         
-        #next:before,
-        #next:after,
-        #prev:before,
-        #prev:after {
-            background: rgb(100, 100, 100);
+        .next:before,
+        .next:after,
+        .prev:before,
+        .prev:after {
+            background: #b2b2b2;
             -moz-border-radius: 0.25em;
             -webkit-border-radius: 0.25em;
             border-radius: 0.25em;
             content: "";
             display: block;
-            height: 0.2em;
+            height: 0.3em;
             position: absolute;
             right: 0;
             top: 50%;
-            width: 0.7em;
+            width: 1.2em;
         }
         
-        #prev:before,
-        #prev:after {
+        .prev:before,
+        .prev:after {
             left: 0
         }
         
-        #next:before,
-        #prev:before {
+        .next:before,
+        .prev:before {
             -moz-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             -o-transform: rotate(45deg);
@@ -4570,8 +4573,8 @@
             transform: rotate(45deg);
         }
         
-        #next:after,
-        #prev:after {
+        .next:after,
+        .prev:after {
             -moz-transform: rotate(-45deg);
             -ms-transform: rotate(-45deg);
             -o-transform: rotate(-45deg);
@@ -4579,27 +4582,27 @@
             transform: rotate(-45deg);
         }
         
-        #prev:after,
-        #next:before {
-            margin-top: -.36em
+        .prev:after,
+        .next:before {
+            margin-top: -0.65em
         }
         
-        #next:hover,
-        #next:focus,
-        #prev:hover,
-        #prev:focus {
-            color: #b2b2b2
+        .next:hover,
+        .next:focus,
+        .prev:hover,
+        .prev:focus {
+            color: rgb(100, 100, 100)
         }
         
-        #next:hover:before,
-        #next:hover:after,
-        #next:focus:before,
-        #next:focus:after,
-        #prev:hover:before,
-        #prev:hover:after,
-        #prev:focus:before,
-        #prev:focus:after {
-            background: #b2b2b2
+        .next:hover:before,
+        .next:hover:after,
+        .next:focus:before,
+        .next:focus:after,
+        .prev:hover:before,
+        .prev:hover:after,
+        .prev:focus:before,
+        .prev:focus:after {
+            background: rgb(100, 100, 100)
         }
         /* container styles  */
         /* nav {
@@ -4633,11 +4636,8 @@
                         </div>
                         <div>
                             <br> {% autoescape false %} {% for i in range(armtext|length()) %}
-                            <nav>
-                                <a href="#" id="prev"></a>
-                                <a href="#" id="next"></a>
-                            </nav>
-                            <h2><a> -- {{i +1}} -- </a></h2>
+
+                            <h2><a name="{{i+1}}" id="{{i}}"> -- {{ i + 1 }} -- </a></h2>
                             <!-- <hr color="#54b0cb" /> -->
                             <table class="table">
 
@@ -4661,41 +4661,52 @@
                         </div>
                     </div>
 
+                    <div class="pagination">
+                        <div class="pagination_left"></div>
+                        <a href="#" class="prev" @click="changePage(prevP)"></a>
+                        </a>
+                    </div>
+                    <div class="pagination_right">
+                        <a href="#" class="next" @click="changePage(nextP)"></a>
+                        </a>
+                    </div>
                 </div>
-                <footer>
-                    <div class="contain">
-                        <section class="grid grid--full menu-footer">
-                            <div class="grid__item seven-twelfths portable--one-half">
-                                <div class="grid grid--full">
 
-                                    <div class="grid__item lap--five-twelfths menu-footer__item menu-footer__item--get-in-touch menu-footer__item--emphasis">
-                                        <div class="align align--top">
-                                            <h4>Contact Us</h4>
-                                            <p><a href="https://goo.gl/maps/QT9rBpHTkh6Yn9137" target="_blank" rel="noopener noreferrer" class="link-secondary">
+        </div>
+        <footer>
+            <div class="contain">
+                <section class="grid grid--full menu-footer">
+                    <div class="grid__item seven-twelfths portable--one-half">
+                        <div class="grid grid--full">
+
+                            <div class="grid__item lap--five-twelfths menu-footer__item menu-footer__item--get-in-touch menu-footer__item--emphasis">
+                                <div class="align align--top">
+                                    <h4>Contact Us</h4>
+                                    <p><a href="https://goo.gl/maps/QT9rBpHTkh6Yn9137" target="_blank" rel="noopener noreferrer" class="link-secondary">
                                                 Киев<br>
                                                 ул. Горловская 213</a>
-                                            </p>
-                                        </div>
-                                        <div class="align align--bottom">
-                                            <p><a href="mailto:" class="link-secondary">armchurchkiev@gmail.com</a><br><a href="tel:+380958939964" class="link-secondary">+38 095 893 9964</a></p>
-                                        </div>
-                                    </div>
+                                    </p>
+                                </div>
+                                <div class="align align--bottom">
+                                    <p><a href="mailto:" class="link-secondary">armchurchkiev@gmail.com</a><br><a href="tel:+380958939964" class="link-secondary">+38 095 893 9964</a></p>
                                 </div>
                             </div>
-                            <div class="grid__item five-twelfths portable--one-half menu-footer__item menu-footer__item--social-and-legal menu-footer__item--emphasis">
-                                <div class="align align--top">
-                                    <h4>Connect With Us</h4>
-                                    <ul class="social-media-list social-media-list--reset">
-                                        <li class="social-media-list__item"><a href="https://www.facebook.com/armchurchkiev" title="Facebook" target="_blank" rel="noopener noreferrer" class="social-media-link"><span class="social-media-link__visually-hidden">Facebook</span><div><svg aria-labelledby="Facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 25.84" width="26" height="25.84"><title id="Facebook" lang="en">Facebook</title><path d="M13,0a13,13,0,0,0-2,25.84V16.76H7.67V13H11V10.14c0-3.26,1.94-5.06,4.91-5.06a20.34,20.34,0,0,1,2.91.25v3.2H17.15a1.88,1.88,0,0,0-2.12,2V13h3.61l-.58,3.76H15v9.08A13,13,0,0,0,13,0Z" class="grey"></path></svg></div></a></li>
-                                        <li class="social-media-list__item"><a href="https://www.instagram.com/armchurchkiev/" title="Instagram" target="_blank" rel="noopener noreferrer" class="social-media-link"><span class="social-media-link__visually-hidden">Instagram</span><div><svg aria-labelledby="Instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="26" height="26"><title id="Instagram" lang="en">Instagram</title><path d="M13,2.34c3.47,0,3.88,0,5.25.08a7.22,7.22,0,0,1,2.42.45,3.89,3.89,0,0,1,1.49,1,3.89,3.89,0,0,1,1,1.49,7.22,7.22,0,0,1,.45,2.42c.06,1.37.08,1.78.08,5.25s0,3.88-.08,5.25a7.22,7.22,0,0,1-.45,2.42,4.3,4.3,0,0,1-2.46,2.46,7.22,7.22,0,0,1-2.42.45c-1.37.06-1.78.08-5.25.08s-3.88,0-5.25-.08a7.22,7.22,0,0,1-2.42-.45,3.89,3.89,0,0,1-1.49-1,3.89,3.89,0,0,1-1-1.49,7.22,7.22,0,0,1-.45-2.42c-.06-1.37-.08-1.78-.08-5.25s0-3.88.08-5.25a7.22,7.22,0,0,1,.45-2.42,3.89,3.89,0,0,1,1-1.49,3.89,3.89,0,0,1,1.49-1,7.22,7.22,0,0,1,2.42-.45c1.37-.06,1.78-.08,5.25-.08M13,0C9.47,0,9,0,7.64.08a9.57,9.57,0,0,0-3.16.6,6.39,6.39,0,0,0-2.3,1.5,6.39,6.39,0,0,0-1.5,2.3,9.57,9.57,0,0,0-.6,3.16C0,9,0,9.47,0,13s0,4,.08,5.36a9.57,9.57,0,0,0,.6,3.16,6.39,6.39,0,0,0,1.5,2.3,6.39,6.39,0,0,0,2.3,1.5,9.57,9.57,0,0,0,3.16.6C9,26,9.47,26,13,26s4,0,5.36-.08a9.57,9.57,0,0,0,3.16-.6,6.66,6.66,0,0,0,3.8-3.8,9.57,9.57,0,0,0,.6-3.16C26,17,26,16.53,26,13s0-4-.08-5.36a9.57,9.57,0,0,0-.6-3.16,6.39,6.39,0,0,0-1.5-2.3,6.39,6.39,0,0,0-2.3-1.5,9.57,9.57,0,0,0-3.16-.6C17,0,16.53,0,13,0Z" class="grey"></path><path d="M13,6.32A6.68,6.68,0,1,0,19.68,13,6.68,6.68,0,0,0,13,6.32Zm0,11A4.33,4.33,0,1,1,17.33,13,4.33,4.33,0,0,1,13,17.33Z" class="grey"></path><circle cx="19.94" cy="6.06" r="1.56" class="grey"></circle></svg></div></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
+                        </div>
                     </div>
-                    <div class="no-ssr-placeholder"></div>
-                </footer>
-            </main>
-        </div>
+                    <div class="grid__item five-twelfths portable--one-half menu-footer__item menu-footer__item--social-and-legal menu-footer__item--emphasis">
+                        <div class="align align--top">
+                            <h4>Connect With Us</h4>
+                            <ul class="social-media-list social-media-list--reset">
+                                <li class="social-media-list__item"><a href="https://www.facebook.com/armchurchkiev" title="Facebook" target="_blank" rel="noopener noreferrer" class="social-media-link"><span class="social-media-link__visually-hidden">Facebook</span><div><svg aria-labelledby="Facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 25.84" width="26" height="25.84"><title id="Facebook" lang="en">Facebook</title><path d="M13,0a13,13,0,0,0-2,25.84V16.76H7.67V13H11V10.14c0-3.26,1.94-5.06,4.91-5.06a20.34,20.34,0,0,1,2.91.25v3.2H17.15a1.88,1.88,0,0,0-2.12,2V13h3.61l-.58,3.76H15v9.08A13,13,0,0,0,13,0Z" class="grey"></path></svg></div></a></li>
+                                <li class="social-media-list__item"><a href="https://www.instagram.com/armchurchkiev/" title="Instagram" target="_blank" rel="noopener noreferrer" class="social-media-link"><span class="social-media-link__visually-hidden">Instagram</span><div><svg aria-labelledby="Instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="26" height="26"><title id="Instagram" lang="en">Instagram</title><path d="M13,2.34c3.47,0,3.88,0,5.25.08a7.22,7.22,0,0,1,2.42.45,3.89,3.89,0,0,1,1.49,1,3.89,3.89,0,0,1,1,1.49,7.22,7.22,0,0,1,.45,2.42c.06,1.37.08,1.78.08,5.25s0,3.88-.08,5.25a7.22,7.22,0,0,1-.45,2.42,4.3,4.3,0,0,1-2.46,2.46,7.22,7.22,0,0,1-2.42.45c-1.37.06-1.78.08-5.25.08s-3.88,0-5.25-.08a7.22,7.22,0,0,1-2.42-.45,3.89,3.89,0,0,1-1.49-1,3.89,3.89,0,0,1-1-1.49,7.22,7.22,0,0,1-.45-2.42c-.06-1.37-.08-1.78-.08-5.25s0-3.88.08-5.25a7.22,7.22,0,0,1,.45-2.42,3.89,3.89,0,0,1,1-1.49,3.89,3.89,0,0,1,1.49-1,7.22,7.22,0,0,1,2.42-.45c1.37-.06,1.78-.08,5.25-.08M13,0C9.47,0,9,0,7.64.08a9.57,9.57,0,0,0-3.16.6,6.39,6.39,0,0,0-2.3,1.5,6.39,6.39,0,0,0-1.5,2.3,9.57,9.57,0,0,0-.6,3.16C0,9,0,9.47,0,13s0,4,.08,5.36a9.57,9.57,0,0,0,.6,3.16,6.39,6.39,0,0,0,1.5,2.3,6.39,6.39,0,0,0,2.3,1.5,9.57,9.57,0,0,0,3.16.6C9,26,9.47,26,13,26s4,0,5.36-.08a9.57,9.57,0,0,0,3.16-.6,6.66,6.66,0,0,0,3.8-3.8,9.57,9.57,0,0,0,.6-3.16C26,17,26,16.53,26,13s0-4-.08-5.36a9.57,9.57,0,0,0-.6-3.16,6.39,6.39,0,0,0-1.5-2.3,6.39,6.39,0,0,0-2.3-1.5,9.57,9.57,0,0,0-3.16-.6C17,0,16.53,0,13,0Z" class="grey"></path><path d="M13,6.32A6.68,6.68,0,1,0,19.68,13,6.68,6.68,0,0,0,13,6.32Zm0,11A4.33,4.33,0,1,1,17.33,13,4.33,4.33,0,0,1,13,17.33Z" class="grey"></path><circle cx="19.94" cy="6.06" r="1.56" class="grey"></circle></svg></div></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="no-ssr-placeholder"></div>
+        </footer>
+        </main>
+    </div>
     </div>
 </body>
