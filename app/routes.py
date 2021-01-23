@@ -10,7 +10,7 @@ def index():
 
     return render_template('index2.html', title='Home')
 
-@app.route('/liturgia')
+@app.route('/liturgy')
 def liturgia():
     text_dict = {'a': [], 't': [], 'r': []}
     # "a" for armenian text
@@ -23,19 +23,34 @@ def liturgia():
             with codecs.open(os.path.join(path, i), "r", encoding="utf-8") as f:
                 text_dict[j].append(f.readlines())
 
-    return render_template('liturgia2.html', title='Liturgia', armtext=text_dict['a'], trltext=text_dict['t'], rustext=text_dict['r'])
+    return render_template('liturgy_arm_rus.html', title='Liturgy', armtext=text_dict['a'], trltext=text_dict['t'], rustext=text_dict['r'])
 
-@app.route('/liturgiadark')
-def liturgia_dark():
-    text_dict = {'a': [], 't': [], 'r': []}
-    # "a" for armenian text
-    # "t" for translitaration of armenian
-    # "r" for russian text
+@app.route('/liturgy-arm')
+def liturgia_arm():
+    text = []
+    path = os.path.normpath(os.getcwd() + f"/app/patarag-text/a")
+    for i in sorted(os.listdir(path)):
+        with codecs.open(os.path.join(path, i), "r", encoding="utf-8") as f:
+            text.append(f.readlines())
 
-    for j in text_dict:
-        path = os.path.normpath(os.getcwd() + f"/app/patarag-text/{j}")
-        for i in sorted(os.listdir(path)):
-            with codecs.open(os.path.join(path, i), "r", encoding="utf-8") as f:
-                text_dict[j].append(f.readlines())
+    return render_template('liturgy_single_lang.html', title='Liturgy-arm', text=text)
 
-    return render_template('liturgia-dark.html', title='Liturgia', armtext=text_dict['a'], trltext=text_dict['t'], rustext=text_dict['r'])
+@app.route('/liturgy-trl')
+def liturgia_trl():
+    text = []
+    path = os.path.normpath(os.getcwd() + f"/app/patarag-text/t")
+    for i in sorted(os.listdir(path)):
+        with codecs.open(os.path.join(path, i), "r", encoding="utf-8") as f:
+            text.append(f.readlines())
+
+    return render_template('liturgy_single_lang.html', title='Liturgy-trl', text=text)
+
+@app.route('/liturgy-rus')
+def liturgia_rus():
+    text = []
+    path = os.path.normpath(os.getcwd() + f"/app/patarag-text/r")
+    for i in sorted(os.listdir(path)):
+        with codecs.open(os.path.join(path, i), "r", encoding="utf-8") as f:
+            text.append(f.readlines())
+
+    return render_template('liturgy_single_lang.html', title='Liturgy-rus', text=text)
