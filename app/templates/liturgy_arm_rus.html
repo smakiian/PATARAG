@@ -4666,11 +4666,11 @@
 
                     <div class="pagination">
                         <div class="pagination_left"></div>
-                        <a href="#" class="prev" @click="changePage(prevP)"></a>
+                        <a href="#" class="prev" @click="changePage(-1)"></a>
                         </a>
                     </div>
                     <div class="pagination_right">
-                        <a href="#" class="next" @click="changePage(nextP)"></a>
+                        <a href="#" class="next" @click="changePage(1)"></a>
                         </a>
                     </div>
                 </div>
@@ -4714,4 +4714,26 @@
         </main>
     </div>
     </div>
+    <script>
+        window.addEventListener('load', () => {
+            const headings = document.querySelectorAll('h2 a[name]');
+            const pag_prev = document.querySelector("a.prev");
+            const pag_next = document.querySelector("a.next");
+            
+            document.addEventListener('scroll', (e) => {
+                headings.forEach(ha => {
+                const rect = ha.getBoundingClientRect();
+                if(rect.top > 0 && rect.top < 150) {
+                    const location = window.location.toString().split('#')[0];
+                    history.replaceState(null, null, location + '#' + ha.name);
+                    let prev_ind = parseInt(ha.name) - 2;
+                    let next_ind = parseInt(ha.name) ;
+                    pag_next.href = '#'+next_ind;
+                    pag_prev.href = '#'+prev_ind;
+                }
+                });
+            });
+        });
+    </script>
+
 </body>
