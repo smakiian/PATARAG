@@ -8,7 +8,7 @@ import os
 @app.route('/index')
 def index():
 
-    return render_template('index2.html', title='Home')
+    return render_template('index.html', title='Home')
 
 @app.route('/liturgy')
 def liturgia():
@@ -23,7 +23,7 @@ def liturgia():
             with codecs.open(os.path.join(path, i), "r", encoding="utf-8") as f:
                 text_dict[j].append(f.readlines())
 
-    return render_template('liturgy_arm_rus.html', title='Liturgy', armtext=text_dict['a'], trltext=text_dict['t'], rustext=text_dict['r'])
+    return render_template('liturgy_three_lang.html', title='Liturgy', armtext=text_dict['a'], trltext=text_dict['t'], rustext=text_dict['r'])
 
 @app.route('/liturgy-arm')
 def liturgia_arm():
