@@ -4,7 +4,7 @@
 <p class="empty_line lang-a chapter-04"></p>
 <p class="lines priest lang-a chapter-04"><b>Քհ – </b>† Օրհնեալ Տէր մեր Յիսուս Քրիստոս. Ամէն:</p>
 <p class="empty_line lang-a chapter-04"></p>
-<p class="annotation lang-a chapter-04">† Հայր մեր, որ յերկինս ես,</p>
+<p class="lines priest paster_noster lang-a chapter-04">† Հայր մեր, որ յերկինս ես,</p>
 <p class="lines priest paster_noster lang-a chapter-04">Սուրբ եղիցի անուն քո:</p>
 <p class="lines priest paster_noster lang-a chapter-04">Եկեսցէ արքայութիւն քո:</p>
 <p class="lines priest paster_noster lang-a chapter-04">Եղիցին կամք Քո, որպէս յերկինս եւ յերկրի:</p>

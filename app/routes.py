@@ -10,7 +10,7 @@ def index():
 
     return render_template('index.html', title='Home')
 
-@app.route('/liturgia')
+@app.route('/liturgy')
 def liturgia():
     text_dict = {'a': [], 't': [], 'r': []}
     # "a" for armenian text
@@ -23,4 +23,4 @@ def liturgia():
             with codecs.open(os.path.join(path, i), "r", encoding="utf-8") as f:
                 text_dict[j].append(f.readlines())
 
-    return render_template('liturgia.html', title='Liturgia', armtext=text_dict['a'], trltext=text_dict['t'], rustext=text_dict['r'])
+    return render_template('liturgy.html', title='Liturgy', armtext=text_dict['a'], trltext=text_dict['t'], rustext=text_dict['r'])

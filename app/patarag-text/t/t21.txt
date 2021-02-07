@@ -2,7 +2,7 @@
 <p class="empty_line lang-t chapter-21"></p>
 <p class="annotation lang-t chapter-21">Пока хор поет, священник поднимает потир и говорит.</p>
 <p class="lines deacon lang-t chapter-21"><b>Диакон – </b>Орhня, Тэр! </p>
-<p class="lines priest lang-t chapter-21"><b>Священник – </b>  Орhнял hайр Сурб, Аствацh чhшмарит. </p>
+<p class="lines priest lang-t chapter-21"><b>Священник – </b>† Орhнял hайр Сурб, Аствацh чhшмарит. </p>
 <p class="lines chorus lang-t chapter-21"><b>Хор – </b>Амэн. </p>
 <p class="lines deacon lang-t chapter-21"><b>Диакон – </b>Орhня, Тэр! </p>
 <p class="lines priest lang-t chapter-21"><b>Священник – </b>† Орhнял Вордид Сурб, Аствацh чhшмарит. </p>

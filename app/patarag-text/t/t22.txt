@@ -8,8 +8,8 @@
 <p class="lines deacon lang-t chapter-22"><b>Диакон – </b>Тэр, вохормя, Тэр, вохормя, Тэр, вохормя, Тэр, вохормя! </p>
 <p class="lines chorus lang-t chapter-22"><b>Хор – </b>Амэнасурб Еррордутhюн, Тур ашхарhис хахаhутhюн. </p>
 <p class="lines deacon lang-t chapter-22"><b>Диакон – </b>Ев hивандац бжшкутhюн, Ннджэцэлоц Аркhайутhюн.</p>
-<p class="lines chorus lang-t chapter-22"><b>Хор – </b>Тэр, вохормя, Тэр, вохормя, hисус Пhркич, мэз вохормя!</p>
-<p class="lines deacon lang-t chapter-22"><b>Диакон – </b>Миджнордутhямб сурб ев анмаh ев кэнарар Патарагис. </p>
+<p class="lines chorus lang-t chapter-22"><b>Хор – </b>Тэр, вохормя, Тэр, вохормя, hИсус Пhркич, мэз вохормя!</p>
+<p class="lines deacon lang-t chapter-22"><b>Диакон – </b>Миджнордутhямб сурб ев анмаh ев Кэнарар Патарагис. </p>
 <p class="lines chorus lang-t chapter-22"><b>Хор – </b>Энкал, Тэр, ев вохормя!</p>
 <p class="empty_line lang-t chapter-22"></p>
 <p class="empty_line lang-t chapter-22"></p>

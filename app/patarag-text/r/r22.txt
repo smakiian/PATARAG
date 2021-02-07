@@ -6,7 +6,7 @@
 <p class="empty_line lang-r chapter-22"></p>
 <p class="lines chorus lang-r chapter-22"><b>Хор – </b>Господи, помилуй. Господи, помилуй. Господи, помилуй. Господи, помилуй.</p>
 <p class="lines deacon lang-r chapter-22"><b>Диакон – </b>Прими, Господи, и помилуй (четырежды)</p>
-<p class="annotation lang-r chapter-22">Хор - Пресвятая Троица, Миру даруй мир.</p>
+<p class="lines chorus lang-r chapter-22"><b>Хор – </b>Пресвятая Троица, Миру даруй мир. </p>
 <p class="lines deacon lang-r chapter-22"><b>Диакон – </b>Больным выздоровление, Покойным вознесение в Царствие Твое.</p>
 <p class="lines chorus lang-r chapter-22"><b>Хор – </b>Господи помилуй, Господи помилуй, Иисус Спаситель, помилуй нас.</p>
 <p class="lines deacon lang-r chapter-22"><b>Диакон – </b>Через Святую и Бессмертную и Живую Литургию.</p>
