@@ -5,10 +5,7 @@
     <title>PATARAG</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <!-- для корректной радоты в интернет эксплорере-->
     <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- тег viewport, который позволяет 
-          выставить базовые настройки для корректного отображения сайта на мобильных устройствах.-->
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
@@ -3800,24 +3797,23 @@
         </footer>
         </main>
     </div>
-    </div>
     <script>
-        window.addEventListener('load', () => {
-            const headings = document.querySelectorAll('h2 a[name]');
+        window.addEventListener("load", () => {
+            const headings = document.querySelectorAll("h2 a[name]");
             const pag_prev = document.querySelector("a.prev");
             const pag_next = document.querySelector("a.next");
-            
-            document.addEventListener('scroll', (e) => {
+
+            document.addEventListener("scroll", (e) => {
                 headings.forEach(ha => {
-                const rect = ha.getBoundingClientRect();
-                if(rect.top > 0 && rect.top < 150) {
-                    const location = window.location.toString().split('#')[0];
-                    history.replaceState(null, null, location + '#' + ha.name);
-                    let prev_ind = parseInt(ha.name) - 2;
-                    let next_ind = parseInt(ha.name) ;
-                    pag_next.href = '#'+next_ind;
-                    pag_prev.href = '#'+prev_ind;
-                }
+                    const rect = ha.getBoundingClientRect();
+                    if (rect.top > 0 && rect.top < 150) {
+                        const location = window.location.toString().split("#")[0];
+                        history.replaceState(null, null, location + "#" + ha.name);
+                        let prev_ind = parseInt(ha.name) - 2;
+                        let next_ind = parseInt(ha.name);
+                        pag_next.href = "#" + next_ind;
+                        pag_prev.href = "#" + prev_ind;
+                    }
                 });
             });
         });
